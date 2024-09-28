@@ -12,15 +12,32 @@ Artificial Neural Networks and Distribution Fit Tests/
 │   ├── 9595_example_last_update_control_95_.xls
 │   └── generator_95_percent.py
 ├── graphs/
-│   ├── images/
-│   │   └── [various .png files]
-│   ├── data/
-│   │   └── [various .xlsx files]
-│   └── [various Python scripts]
+│   ├── distribution_of_non_error_data_by_activation_functions.png
+│   ├── heatmap_of_all_error_data.png
+│   ├── linear_distribution_goodness_of_fit.png
+│   ├── relu_distribution_goodness_of_fit.png
+│   ├── sigmoid_distribution_goodness_of_fit.png
+│   ├── tanh_distribution_goodness_of_fit.png
+│   ├── correct_prediction_data.png
+│   ├── distribution_of_error_data_by_activation_functions.png
+│   ├── linear_quota_table.xlsx
+│   ├── relu_quota_table.xlsx
+│   ├── sigmoid_quota_table.xlsx
+│   ├── tanh_quota_table.xlsx
+│   ├── comprehensive_graphing.py
+│   ├── data_table_utilities.py
+│   ├── fitness_plotting.py
+│   ├── matrix_operations.py
+│   ├── matrix_plotting.py
+│   ├── plotting_utilities.py
+│   └── rename_graph_files_script.ps1
 ├── keras/
-│   ├── [various .xlsx files]
-│   ├── [Python scripts]
-│   └── [PowerShell scripts]
+│   ├── error_analysis_report_95.xlsx
+│   ├── finalize_keras_model_training.py
+│   ├── generate_non_compliant_data.py
+│   ├── k95_prediction_report_update_control.xlsx
+│   ├── rename_keras_files.ps1
+│   └── rename_keras_files_script.ps1
 └── kolmogorov-smirnov/
     ├── distribution_control.py
     └── 95_Confidence_Distribution_Test_Results_All_Sheets.xlsx
