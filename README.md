@@ -4,6 +4,24 @@
 
 This repository contains a comprehensive study on Artificial Neural Networks (ANNs) and Distribution Fit Tests, focusing on various activation functions and their impacts on prediction accuracy and error distribution.
 
+![Project Overview Diagram](path/to/overview_diagram.png)
+
+## Table of Contents
+
+1. [Project Structure](#project-structure)
+2. [Project Components](#project-components)
+3. [Visualizations](#visualizations)
+4. [Usage](#usage)
+5. [Required Tools](#required-tools)
+6. [How to Run](#how-to-run)
+7. [Results](#results)
+8. [Source Files](#source-files)
+9. [To Do](#to-do)
+10. [License](#license)
+11. [Contact](#contact)
+
+---
+
 ## Project Structure
 
 ```
@@ -40,7 +58,9 @@ Artificial Neural Networks and Distribution Fit Tests/
     └── 95_Confidence_Distribution_Test_Results_All_Sheets.xlsx
 ```
 
-## Context
+---
+
+## Project Components
 
 This project explores the behavior of Artificial Neural Networks (ANNs) with different activation functions and analyzes the distribution of prediction errors using various statistical tests. The main components and their purposes are:
 
@@ -56,9 +76,7 @@ This project explores the behavior of Artificial Neural Networks (ANNs) with dif
 4. **Distribution Fit Tests** ([kolmogorov-smirnov/distribution_control.py](kolmogorov-smirnov/distribution_control.py)): 
    Performs Kolmogorov-Smirnov tests to analyze error distributions, with results compiled in [95_Confidence_Distribution_Test_Results_All_Sheets.xlsx](kolmogorov-smirnov/95_Confidence_Distribution_Test_Results_All_Sheets.xlsx).
 
-The project aims to provide insights into the performance of different activation functions and their impact on prediction accuracy and error distributions in neural networks.
-
-[The rest of the README content remains the same]
+---
 
 ## Visualizations
 
@@ -102,7 +120,26 @@ These graphs demonstrate how well the error distributions for each activation fu
 
 This visualization focuses on the patterns in correctly predicted data, providing insights into the strengths of our model across different scenarios.
 
+---
+
 ## Usage
+
+The project aims to provide insights into the performance of different activation functions and their impact on prediction accuracy and error distributions in neural networks.
+
+---
+
+## Required Tools
+
+- Python 3.x
+- TensorFlow/Keras
+- NumPy
+- Pandas
+- Matplotlib
+- SciPy
+
+---
+
+## How to Run
 
 1. **Data Generation**: 
    ```
@@ -124,19 +161,13 @@ This visualization focuses on the patterns in correctly predicted data, providin
    python kolmogorov-smirnov/distribution_control.py
    ```
 
-## Requirements
-
-- Python 3.x
-- TensorFlow/Keras
-- NumPy
-- Pandas
-- Matplotlib
-- SciPy
-
+---
 
 ## License
 
 [Specify your license here]
+
+---
 
 ## Contact
 
