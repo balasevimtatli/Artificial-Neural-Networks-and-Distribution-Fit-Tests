@@ -1,5 +1,7 @@
 # Artificial Neural Networks and Distribution Fit Tests
 
+## Overview
+
 This repository contains a comprehensive study on Artificial Neural Networks (ANNs) and Distribution Fit Tests, focusing on various activation functions and their impacts on prediction accuracy and error distribution.
 
 ## Project Structure
@@ -11,112 +13,111 @@ Artificial Neural Networks and Distribution Fit Tests/
 │   └── generator_95_percent.py
 ├── graphs/
 │   ├── images/
-│   │   ├── distribution_of_non_error_data_by_activation_functions.png
-│   │   ├── heatmap_of_all_error_data.png
-│   │   ├── linear_distribution_goodness_of_fit.png
-│   │   ├── relu_distribution_goodness_of_fit.png
-│   │   ├── sigmoid_distribution_goodness_of_fit.png
-│   │   ├── tanh_distribution_goodness_of_fit.png
-│   │   ├── correct_prediction_data.png
-│   │   └── distribution_of_error_data_by_activation_functions.png
+│   │   └── [various .png files]
 │   ├── data/
-│   │   ├── linear_quota_table.xlsx
-│   │   ├── relu_quota_table.xlsx
-│   │   ├── sigmoid_quota_table.xlsx
-│   │   └── tanh_quota_table.xlsx
-│   ├── comprehensive_graphing.py
-│   ├── data_table_utilities.py
-│   ├── fitness_plotting.py
-│   ├── matrix_operations.py
-│   ├── matrix_plotting.py
-│   ├── plotting_utilities.py
-│   └── rename_graph_files_script.ps1
+│   │   └── [various .xlsx files]
+│   └── [various Python scripts]
 ├── keras/
-│   ├── error_analysis_report_95.xlsx
-│   ├── finalize_keras_model_training.py
-│   ├── generate_non_compliant_data.py
-│   ├── k95_prediction_report_update_control.xlsx
-│   ├── rename_keras_files.ps1
-│   └── rename_keras_files_script.ps1
+│   ├── [various .xlsx files]
+│   ├── [Python scripts]
+│   └── [PowerShell scripts]
 └── kolmogorov-smirnov/
     ├── distribution_control.py
     └── 95_Confidence_Distribution_Test_Results_All_Sheets.xlsx
 ```
 
-## Project Overview
+## Key Components
 
-This project explores the behavior of Artificial Neural Networks (ANNs) with different activation functions and analyzes the distribution of prediction errors using various statistical tests.
+1. **Data Generation**
+   - Location: `generator/` folder
+   - Key file: `generator_95_percent.py`
+   - Purpose: Creates datasets for analysis
 
-### Key Components
+2. **Neural Network Models**
+   - Location: `keras/` folder
+   - Key file: `finalize_keras_model_training.py`
+   - Purpose: Trains and evaluates neural network models
 
-1. **Data Generation**: 
-   - Located in the `generator/` folder
-   - Uses `generator_95_percent.py` to create datasets
-   - Example output: `9595_example_last_update_control_95_.xls`
+3. **Error Analysis and Visualization**
+   - Location: `graphs/` folder
+   - Key files: Various Python scripts for data processing and visualization
+   - Purpose: Generates insightful visualizations of model performance and error distributions
 
-2. **Neural Network Models**: 
-   - Implemented using Keras (see `keras/` folder)
-   - `finalize_keras_model_training.py`: Main script for training models
-   - `generate_non_compliant_data.py`: Creates data for testing model robustness
-
-3. **Error Analysis and Visualization**: 
-   - Found in the `graphs/` folder
-   - Various Python scripts for data processing and visualization
-   - Outputs include distribution plots, heatmaps, and goodness-of-fit visualizations
-
-4. **Distribution Fit Tests**: 
-   - Kolmogorov-Smirnov tests implemented in `kolmogorov-smirnov/distribution_control.py`
-   - Results compiled in `95_Confidence_Distribution_Test_Results_All_Sheets.xlsx`
+4. **Distribution Fit Tests**
+   - Location: `kolmogorov-smirnov/` folder
+   - Key file: `distribution_control.py`
+   - Purpose: Performs statistical tests to analyze error distributions
 
 ## Key Findings
 
-### Activation Function Performance
+### 1. Activation Function Performance
 
-![Distribution of Non-Error Data by Activation Functions](graphs/distribution_of_non_error_data_by_activation_functions.png)
+![Activation Function Performance](graphs/distribution_of_non_error_data_by_activation_functions.png)
 
-This graph shows the distribution of correctly predicted data across different activation functions. It provides insights into which activation functions perform better for our specific problem.
+This graph illustrates the distribution of correctly predicted data across different activation functions (ReLU, Sigmoid, Tanh, Linear). Key observations:
+- ReLU and Linear functions show similar patterns across most categories.
+- Sigmoid and Tanh functions demonstrate distinct behaviors in certain categories.
+- The 'uniform' category shows the most consistent performance across all activation functions.
 
-### Error Distribution Analysis
+### 2. Error Distribution Analysis
 
-![Heatmap of All Error Data](graphs/heatmap_of_all_error_data.png)
+![Error Distribution Heatmap](graphs/heatmap_of_all_error_data.png)
 
-The heatmap visualizes the distribution of errors across different scenarios, helping identify patterns or clusters of errors.
+This heatmap visualizes the distribution of errors across different scenarios:
+- Darker colors indicate higher error concentrations.
+- The pattern suggests certain combinations of factors lead to more frequent errors.
+- Some rows (scenarios) show consistently low error rates across all conditions.
 
-### Goodness of Fit for Different Activation Functions
+### 3. Goodness of Fit for Different Activation Functions
 
-1. ![Linear Distribution Goodness of Fit](graphs/linear_distribution_goodness_of_fit.png)
-2. ![ReLU Distribution Goodness of Fit](graphs/relu_distribution_goodness_of_fit.png)
-3. ![Sigmoid Distribution Goodness of Fit](graphs/sigmoid_distribution_goodness_of_fit.png)
-4. ![Tanh Distribution Goodness of Fit](graphs/tanh_distribution_goodness_of_fit.png)
+#### Linear Activation Function
+![Linear Distribution Goodness of Fit](graphs/linear_distribution_goodness_of_fit.png)
 
-These graphs demonstrate how well the error distributions for each activation function fit to theoretical probability distributions.
+#### ReLU Activation Function
+![ReLU Distribution Goodness of Fit](graphs/relu_distribution_goodness_of_fit.png)
+
+#### Sigmoid Activation Function
+![Sigmoid Distribution Goodness of Fit](graphs/sigmoid_distribution_goodness_of_fit.png)
+
+#### Tanh Activation Function
+![Tanh Distribution Goodness of Fit](graphs/tanh_distribution_goodness_of_fit.png)
+
+These graphs demonstrate how well the error distributions for each activation function fit to theoretical probability distributions:
+- Green bars represent a good fit, while red bars indicate a poor fit.
+- The x-axis shows different distribution types (e.g., Beta, Cauchy, Exponential).
+- Linear and ReLU functions show similar fitting patterns, while Sigmoid and Tanh have distinct characteristics.
 
 ## Usage
 
 1. **Data Generation**: 
-   Run `generator_95_percent.py` in the `generator/` folder to create datasets.
+   ```
+   python generator/generator_95_percent.py
+   ```
 
 2. **Model Training**: 
-   Execute `finalize_keras_model_training.py` in the `keras/` folder to train the neural network models.
+   ```
+   python keras/finalize_keras_model_training.py
+   ```
 
 3. **Visualization and Analysis**: 
-   Use scripts in the `graphs/` folder to generate visualizations and perform data analysis.
+   ```
+   python graphs/comprehensive_graphing.py
+   ```
 
 4. **Distribution Tests**: 
-   Run `distribution_control.py` in the `kolmogorov-smirnov/` folder to perform distribution fit tests.
+   ```
+   python kolmogorov-smirnov/distribution_control.py
+   ```
 
 ## Requirements
 
 - Python 3.x
 - TensorFlow/Keras
-- Numpy
+- NumPy
 - Pandas
 - Matplotlib
 - SciPy
 
-## Contributing
-
-Contributions to this project are welcome. Please ensure to update tests as appropriate and adhere to the existing coding style.
 
 ## License
 
