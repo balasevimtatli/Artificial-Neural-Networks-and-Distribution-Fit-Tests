@@ -29,8 +29,7 @@ Artificial Neural Networks and Distribution Fit Tests/
 │   ├── fitness_plotting.py
 │   ├── matrix_operations.py
 │   ├── matrix_plotting.py
-│   ├── plotting_utilities.py
-│   └── rename_graph_files_script.ps1
+│   └── plotting_utilities.py
 ├── keras/
 │   ├── finalize_keras_model_training.py
 │   ├── generate_non_compliant_data.py
