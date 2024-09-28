@@ -4,23 +4,15 @@
 
 This repository contains a comprehensive study on Artificial Neural Networks (ANNs) and Distribution Fit Tests, focusing on various activation functions and their impacts on prediction accuracy and error distribution.
 
-![Project Overview Diagram](path/to/overview_diagram.png)
-
 ## Table of Contents
 
 1. [Project Structure](#project-structure)
 2. [Project Components](#project-components)
-3. [Visualizations](#visualizations)
-4. [Usage](#usage)
-5. [Required Tools](#required-tools)
-6. [How to Run](#how-to-run)
-7. [Results](#results)
-8. [Source Files](#source-files)
-9. [To Do](#to-do)
-10. [License](#license)
-11. [Contact](#contact)
-
----
+3. [Required Tools](#required-tools)
+4. [How to Run](#how-to-run)
+5. [Visualizations](#visualizations)
+6. [License](#license)
+7. [Contact](#contact)
 
 ## Project Structure
 
@@ -29,36 +21,34 @@ Artificial Neural Networks and Distribution Fit Tests/
 ├── generator/
 │   ├── generator_95_percent.py
 │   └── 9595_example_last_update_control_95_.xls
-├── graphs/
-│   ├── distribution_of_error_data_by_activation_functions.png
-│   ├── distribution_of_non_error_data_by_activation_functions.png
-│   ├── heatmap_of_all_error_data.png
-│   ├── linear_distribution_goodness_of_fit.png
-│   ├── relu_distribution_goodness_of_fit.png
-│   ├── sigmoid_distribution_goodness_of_fit.png
-│   ├── tanh_distribution_goodness_of_fit.png
-│   ├── correct_prediction_data.png
-│   ├── linear_quota_table.xlsx
-│   ├── relu_quota_table.xlsx
-│   ├── sigmoid_quota_table.xlsx
-│   ├── tanh_quota_table.xlsx
-│   ├── comprehensive_graphing.py
-│   ├── data_table_utilities.py
-│   ├── fitness_plotting.py
-│   ├── matrix_operations.py
-│   ├── matrix_plotting.py
-│   └── plotting_utilities.py
 ├── keras/
 │   ├── finalize_keras_model_training.py
 │   ├── generate_non_compliant_data.py
 │   ├── k95_prediction_report_update_control.xlsx
 │   └── error_analysis_report_95.xlsx
-└── kolmogorov-smirnov/
-    ├── distribution_control.py
-    └── 95_Confidence_Distribution_Test_Results_All_Sheets.xlsx
+├── kolmogorov-smirnov/
+│   ├── distribution_control.py
+│   └── 95_Confidence_Distribution_Test_Results_All_Sheets.xlsx
+└── graphs/
+    ├── distribution_of_error_data_by_activation_functions.png
+    ├── distribution_of_non_error_data_by_activation_functions.png
+    ├── heatmap_of_all_error_data.png
+    ├── linear_distribution_goodness_of_fit.png
+    ├── relu_distribution_goodness_of_fit.png
+    ├── sigmoid_distribution_goodness_of_fit.png
+    ├── tanh_distribution_goodness_of_fit.png
+    ├── correct_prediction_data.png
+    ├── linear_quota_table.xlsx
+    ├── relu_quota_table.xlsx
+    ├── sigmoid_quota_table.xlsx
+    ├── tanh_quota_table.xlsx
+    ├── comprehensive_graphing.py
+    ├── data_table_utilities.py
+    ├── fitness_plotting.py
+    ├── matrix_operations.py
+    ├── matrix_plotting.py
+    └── plotting_utilities.py
 ```
-
----
 
 ## Project Components
 
@@ -76,7 +66,18 @@ This project explores the behavior of Artificial Neural Networks (ANNs) with dif
 4. **Distribution Fit Tests** ([kolmogorov-smirnov/distribution_control.py](kolmogorov-smirnov/distribution_control.py)): 
    Performs Kolmogorov-Smirnov tests to analyze error distributions, with results compiled in [95_Confidence_Distribution_Test_Results_All_Sheets.xlsx](kolmogorov-smirnov/95_Confidence_Distribution_Test_Results_All_Sheets.xlsx).
 
----
+## Required Tools
+
+- Python 3.x
+- TensorFlow/Keras
+- NumPy
+- Pandas
+- Matplotlib
+- SciPy
+
+## How to Run
+
+[Add instructions on how to run the project here]
 
 ## Visualizations
 
@@ -120,54 +121,9 @@ These graphs demonstrate how well the error distributions for each activation fu
 
 This visualization focuses on the patterns in correctly predicted data, providing insights into the strengths of our model across different scenarios.
 
----
-
-## Usage
-
-The project aims to provide insights into the performance of different activation functions and their impact on prediction accuracy and error distributions in neural networks.
-
----
-
-## Required Tools
-
-- Python 3.x
-- TensorFlow/Keras
-- NumPy
-- Pandas
-- Matplotlib
-- SciPy
-
----
-
-## How to Run
-
-1. **Data Generation**: 
-   ```
-   python generator/generator_95_percent.py
-   ```
-
-2. **Model Training**: 
-   ```
-   python keras/finalize_keras_model_training.py
-   ```
-
-3. **Visualization and Analysis**: 
-   ```
-   python graphs/comprehensive_graphing.py
-   ```
-
-4. **Distribution Tests**: 
-   ```
-   python kolmogorov-smirnov/distribution_control.py
-   ```
-
----
-
 ## License
 
 [Specify your license here]
-
----
 
 ## Contact
 
