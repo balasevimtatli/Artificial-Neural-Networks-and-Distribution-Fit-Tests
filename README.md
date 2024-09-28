@@ -9,10 +9,9 @@ This repository contains a comprehensive study on Artificial Neural Networks (AN
 1. [Project Structure](#project-structure)
 2. [Project Components](#project-components)
 3. [Required Tools](#required-tools)
-4. [How to Run](#how-to-run)
-5. [Visualizations](#visualizations)
-6. [License](#license)
-7. [Contact](#contact)
+4. [Visualizations](#visualizations)
+5. [License](#license)
+6. [Contact](#contact)
 
 ## Project Structure
 
@@ -74,10 +73,6 @@ This project explores the behavior of Artificial Neural Networks (ANNs) with dif
 - Pandas
 - Matplotlib
 - SciPy
-
-## How to Run
-
-[Add instructions on how to run the project here]
 
 ## Visualizations
 
