@@ -40,6 +40,26 @@ Artificial Neural Networks and Distribution Fit Tests/
     └── 95_Confidence_Distribution_Test_Results_All_Sheets.xlsx
 ```
 
+## Context
+
+This project explores the behavior of Artificial Neural Networks (ANNs) with different activation functions and analyzes the distribution of prediction errors using various statistical tests. The main components and their purposes are:
+
+1. **Data Generation** ([generator/generator_95_percent.py](generator/generator_95_percent.py)): 
+   Creates datasets for analysis, with an example output in [9595_example_last_update_control_95_.xls](generator/9595_example_last_update_control_95_.xls).
+
+2. **Neural Network Models** ([keras/finalize_keras_model_training.py](keras/finalize_keras_model_training.py)): 
+   Implements and trains the neural network models using Keras. [generate_non_compliant_data.py](keras/generate_non_compliant_data.py) is used to test model robustness.
+
+3. **Error Analysis and Visualization** ([graphs/comprehensive_graphing.py](graphs/comprehensive_graphing.py)): 
+   Generates various visualizations to analyze model performance and error distributions. Utilizes helper scripts like [data_table_utilities.py](graphs/data_table_utilities.py), [fitness_plotting.py](graphs/fitness_plotting.py), etc.
+
+4. **Distribution Fit Tests** ([kolmogorov-smirnov/distribution_control.py](kolmogorov-smirnov/distribution_control.py)): 
+   Performs Kolmogorov-Smirnov tests to analyze error distributions, with results compiled in [95_Confidence_Distribution_Test_Results_All_Sheets.xlsx](kolmogorov-smirnov/95_Confidence_Distribution_Test_Results_All_Sheets.xlsx).
+
+The project aims to provide insights into the performance of different activation functions and their impact on prediction accuracy and error distributions in neural networks.
+
+[The rest of the README content remains the same]
+
 ## Visualizations
 
 ### 1. Distribution of Non-Error Data by Activation Functions
